@@ -59,4 +59,11 @@ function logToDos(toDos, i){
 toDos.forEach(logToDos);
 toDos2.forEach(logToDos);
 
+// forEach example 
 
+database.users.forEach((user) => {
+    if (user.id === id) {
+      found = true;
+      return res.json(user);
+    }
+  });
